@@ -14,31 +14,5 @@ class ViewModel {
     var userName: String?
     
     init() { }
-    
-    func updateValues(_ data: Data) {
-        self.port = data.port
 
-        let parsed = parseIPAndPort(data.ipAddress)
-        
-        print("PARSED \(parsed)")
-        if parsed.count > 1 {
-            self.ipAddress = parsed[0]
-            self.port = parsed[1]
-        } else {
-            self.ipAddress = parsed[0]
-        }
-        
-        self.userName = data.userName
-        
-        print("updated: \(self.ipAddress) \(self.port) \(self.userName)")
-    }
-    
-    func parseIPAndPort(_ input: String) -> [String] {
-        var result: [String] = []
-        let split: [Substring] = input.split(separator: ":")
-        
-        split.forEach {  result.append(String($0)) }
-        
-        return result
-    }
 }

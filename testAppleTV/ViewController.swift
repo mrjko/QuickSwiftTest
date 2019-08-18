@@ -9,10 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var ipAddress: UITextField!
-    @IBOutlet weak var port: UITextField!
-    @IBOutlet weak var userName: UITextField!
+
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var button2: UIButton!
     
     let viewModel = ViewModel()
     
@@ -20,40 +19,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("hello world")
-        port.isHidden = (viewModel.port == nil)
-    }
-    
-    @IBAction func textFieldEndEdit(_ sender: Any) {
-        guard let i = ipAddress.text,
-            let p = port.text,
-            let u = userName.text else {
-                return
-        }
         
-        let data = Data(i, p, u)
+        button.adjustsImageWhenHighlighted = true
+        let backgroundImage = UIImageView(image: UIImage(named: "preview1.lsr"))
+        backgroundImage.adjustsImageWhenAncestorFocused = true
+        backgroundImage.frame = button.bounds
+        button.layer.cornerRadius = 10
+        button.addSubview(backgroundImage)
         
-        viewModel.updateValues(data)
-        
-        updateUI()
-    }
-    
-    func updateUI() {
-        ipAddress.text = viewModel.ipAddress
-        port.isHidden = (viewModel.port == nil)
-        port.text = viewModel.port
-        userName.text = viewModel.userName
-    }
-    
-}
-
-struct Data {
-    var ipAddress: String
-    var port: String
-    var userName: String
-    
-    init(_ ip: String, _ port: String, _ un: String) {
-        self.ipAddress = ip
-        self.port = port
-        self.userName = un
+        button2.adjustsImageWhenHighlighted = true
+        let backgroundImage2 = UIImageView(image: UIImage(named: "preview1.lsr"))
+        backgroundImage2.adjustsImageWhenAncestorFocused = true
+        backgroundImage2.frame = button2.bounds
+        button2.layer.cornerRadius = 10
+        button2.addSubview(backgroundImage2)
     }
 }

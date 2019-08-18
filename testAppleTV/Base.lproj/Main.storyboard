@@ -22,55 +22,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UHu-dw-7qP">
-                                <rect key="frame" x="120" y="90" width="960" height="540"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IP Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-5Z-I67" userLabel="IP Address Text Field">
-                                        <rect key="frame" x="0.0" y="0.0" width="960" height="180"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="textFieldEndEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="izQ-hj-560"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="PDP-RJ-qzx"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lI7-IH-cSB" userLabel="Port Text Field">
-                                        <rect key="frame" x="0.0" y="180" width="960" height="180"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="textFieldEndEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="RgL-Em-2q6"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="hQu-l2-aZa"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6dp-cu-q2S" userLabel="Username Text Field">
-                                        <rect key="frame" x="0.0" y="360" width="960" height="180"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="textFieldEndEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uwT-Rt-VFW"/>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="wYq-pS-wlp"/>
-                                        </connections>
-                                    </textField>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-9K-w6X">
+                                <rect key="frame" x="865" y="445" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="2fd-nD-q8K"/>
+                                    <constraint firstAttribute="height" constant="190" id="iqP-CI-8Yz"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6U-oC-D4l" userLabel="Button2">
+                                <rect key="frame" x="1155" y="445" width="190" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="dbO-eE-d9f"/>
+                                    <constraint firstAttribute="height" constant="190" id="iCF-93-maB"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="UHu-dw-7qP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="5E2-oA-tDa"/>
-                            <constraint firstItem="UHu-dw-7qP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="I7X-oE-7ji"/>
-                            <constraint firstItem="UHu-dw-7qP" firstAttribute="top" secondItem="wu6-TO-1qx" secondAttribute="top" constant="30" id="bUY-jP-Dur"/>
-                            <constraint firstItem="UHu-dw-7qP" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" constant="30" id="d6i-jW-3By"/>
+                            <constraint firstItem="k6U-oC-D4l" firstAttribute="leading" secondItem="TCX-9K-w6X" secondAttribute="trailing" constant="100" id="6l7-Ra-oRF"/>
+                            <constraint firstItem="k6U-oC-D4l" firstAttribute="top" secondItem="TCX-9K-w6X" secondAttribute="top" id="Q0Q-UP-Xk4"/>
+                            <constraint firstItem="TCX-9K-w6X" firstAttribute="centerX" secondItem="wu6-TO-1qx" secondAttribute="centerX" id="joS-ZY-h4c"/>
+                            <constraint firstItem="TCX-9K-w6X" firstAttribute="centerY" secondItem="wu6-TO-1qx" secondAttribute="centerY" id="okF-JI-G8P"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <connections>
-                        <outlet property="ipAddress" destination="yWq-5Z-I67" id="cTj-YV-reR"/>
-                        <outlet property="port" destination="lI7-IH-cSB" id="j6m-D7-Py5"/>
-                        <outlet property="userName" destination="6dp-cu-q2S" id="f2a-yA-Hxh"/>
+                        <outlet property="button" destination="TCX-9K-w6X" id="IIE-5v-pmO"/>
+                        <outlet property="button2" destination="k6U-oC-D4l" id="3Wr-8x-NKa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
