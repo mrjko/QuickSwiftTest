@@ -12,26 +12,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var button2: UIButton!
-    
-    let viewModel = ViewModel()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("hello world")
-        
+        configure(button)
+        configure(button2)
+    }
+    
+    private func configure(_ button: UIButton) {
         button.adjustsImageWhenHighlighted = true
-        let backgroundImage = UIImageView(image: UIImage(named: "preview1.lsr"))
-        backgroundImage.adjustsImageWhenAncestorFocused = true
-        backgroundImage.frame = button.bounds
         button.layer.cornerRadius = 10
-        button.addSubview(backgroundImage)
-        
-        button2.adjustsImageWhenHighlighted = true
-        let backgroundImage2 = UIImageView(image: UIImage(named: "preview1.lsr"))
-        backgroundImage2.adjustsImageWhenAncestorFocused = true
-        backgroundImage2.frame = button2.bounds
-        button2.layer.cornerRadius = 10
-        button2.addSubview(backgroundImage2)
+        let imageView = createImageView(for: button)
+        button.addSubview(imageView)
+    }
+    
+    private func createImageView(for button: UIButton) -> UIImageView {
+        let imageView = UIImageView(image: UIImage(named: "preview1.lsr"))
+        imageView.adjustsImageWhenAncestorFocused = true
+        imageView.frame = button.bounds
+        return imageView
     }
 }

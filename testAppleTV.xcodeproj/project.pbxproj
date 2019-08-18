@@ -13,7 +13,6 @@
 		EF03C09822B2AA8500DEC309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF03C09722B2AA8500DEC309 /* Assets.xcassets */; };
 		EF03C0A322B2AA8500DEC309 /* testAppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03C0A222B2AA8500DEC309 /* testAppleTVTests.swift */; };
 		EF03C0AE22B2AA8500DEC309 /* testAppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF03C0AD22B2AA8500DEC309 /* testAppleTVUITests.swift */; };
-		EF7CE35722FA83CC006E823E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CE35622FA83CC006E823E /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		EF03C0A922B2AA8500DEC309 /* testAppleTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppleTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF03C0AD22B2AA8500DEC309 /* testAppleTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testAppleTVUITests.swift; sourceTree = "<group>"; };
 		EF03C0AF22B2AA8500DEC309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF7CE35622FA83CC006E823E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 			children = (
 				EF03C09022B2AA8000DEC309 /* AppDelegate.swift */,
 				EF03C09222B2AA8000DEC309 /* ViewController.swift */,
-				EF7CE35622FA83CC006E823E /* ViewModel.swift */,
 				EF03C09422B2AA8000DEC309 /* Main.storyboard */,
 				EF03C09722B2AA8500DEC309 /* Assets.xcassets */,
 				EF03C09922B2AA8500DEC309 /* Info.plist */,
@@ -256,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF03C09322B2AA8000DEC309 /* ViewController.swift in Sources */,
-				EF7CE35722FA83CC006E823E /* ViewModel.swift in Sources */,
 				EF03C09122B2AA8000DEC309 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
